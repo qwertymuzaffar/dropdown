@@ -13,13 +13,13 @@ export class DropdownComponent implements OnInit {
   @Input() _automation: Language[];
   @Input() _monitors: Language[];
 
-  private automation: Language[];
-  private monitors: Language[];
-  private dropdownActive = false;
-  private search = '';
-  private searchUpdate = new Subject<string>();
-  private visibleElements = 50;
-  private scrollStep = 1;
+  automation: Language[];
+  monitors: Language[];
+  dropdownActive = false;
+  search = '';
+  searchUpdate = new Subject<string>();
+  visibleElements = 50;
+  scrollStep = 1;
 
   constructor() {
   }
